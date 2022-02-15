@@ -14,3 +14,10 @@ def euclidean_algorithm(m: int, n: int) -> int:
         n = r
         r = m % n
     return n
+
+
+def gcd(m: int, n: int) -> int:
+    if n == 0:
+        return m
+    else:
+        return gcd(n, m % n)
